@@ -42,7 +42,7 @@
   connect = function(url) {
     var client;
     client = mqtt.connect(url);
-    return eventToPromise(client, 'connect').then(function() {
+    return eventToPromise.multi(client, ['connect'], ['reconnect', 'close', 'offline', 'error']).then(function() {
       return client;
     });
   };

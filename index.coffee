@@ -28,7 +28,7 @@ temp = ->
 
 connect = (url) ->
   client = mqtt.connect url
-  eventToPromise client, 'connect'
+  eventToPromise.multi client, ['connect'], ['reconnect', 'close', 'offline', 'error']
     .then ->
       return client
 
