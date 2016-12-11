@@ -11,7 +11,7 @@ npm install cpu
 
 ## get cpu temperature
 ```
-cpu = require 'cpu'
+cpu = require 'cputemp'
 
 cpu
   .temp()
@@ -21,7 +21,7 @@ cpu
 
 ## publish cpu temperature to defined mqtt topic
 ```
-cpu = require 'cpu'
+cpu = require 'cputemp'
 
 cpu.pub()
 ```

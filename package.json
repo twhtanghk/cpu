@@ -1,5 +1,5 @@
 {
-  "name": "cpu",
+  "name": "cputemp",
   "version": "0.0.1",
   "description": "module to get cpu temperature from sysfs",
   "main": "index.js",
