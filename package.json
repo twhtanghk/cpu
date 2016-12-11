@@ -1,0 +1,22 @@
+{
+  "name": "cpu",
+  "version": "0.0.1",
+  "description": "module to get cpu temperature from sysfs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/coffee start.coffee",
+    "test": "node_modules/.bin/coffee test.coffee"
+  },
+  "author": "Tommy Tang <twhtanghk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "event-to-promise": "^0.7.0",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.2",
+    "mqtt": "^2.1.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.1"
+  }
+}

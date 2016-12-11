@@ -1,0 +1,9 @@
+version: '2'
+services:
+  cpu:
+    image: node
+    volumes:
+      - ${COMPOSEROOT}/cpu:/usr/src/app
+    env_file: 
+      - ../.env
+    entrypoint: top -b -d 1000
